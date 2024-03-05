@@ -2,9 +2,9 @@ package telran.probes.dto;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
-import static telran.probes.messages.ErrorMassages.*;
+import static telran.probes.messages.ErrorMessages.*;
 
 public record SensorRange(@NotNull (message = MISING_SENSOR_ID)long id,
-		@Valid @NotNull (message = MISING_RANGE)Range range) {
+		@Valid @NotNull (message = MISSING_RANGE)Range range) {
 
 }

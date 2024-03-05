@@ -1,9 +1,9 @@
 package telran.probes.dto;
 
 import jakarta.validation.constraints.NotNull;
-import static telran.probes.messages.ErrorMassages.MISING_EMAILS;
+import static telran.probes.messages.ErrorMessages.*;
 
-public record SensorEmails(@NotNull(message = MISING_EMAILS) long id,
+public record SensorEmails(@NotNull(message = MISSING_EMAILS) long id,
 		String[] mails) {
 
 }
